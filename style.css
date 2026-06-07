@@ -1,0 +1,124 @@
+#garden{
+position:absolute;
+width:100%;
+height:100%;
+overflow:hidden;
+}
+
+/* =========================
+FLOWER CONTAINER
+========================= */
+
+.flower{
+position:absolute;
+bottom:0;
+width:90px;
+height:140px;
+animation:sway 4s ease-in-out infinite;
+transform-origin:bottom;
+}
+
+/* =========================
+STEM (BATANG)
+========================= */
+
+.stem{
+position:absolute;
+bottom:0;
+left:50%;
+transform:translateX(-50%);
+width:6px;
+height:90px;
+background:linear-gradient(#1f7a3a,#2ecc71);
+border-radius:3px;
+}
+
+/* =========================
+LEAVES (DAUN)
+========================= */
+
+.leaf{
+position:absolute;
+width:25px;
+height:45px;
+background:#2ecc71;
+border-radius:60% 40% 60% 40%;
+}
+
+.leaf.left{
+left:5px;
+bottom:35px;
+transform:rotate(-35deg);
+}
+
+.leaf.right{
+right:5px;
+bottom:45px;
+transform:rotate(35deg);
+}
+
+/* =========================
+FLOWER CENTER
+========================= */
+
+.centerFlower{
+position:absolute;
+top:20px;
+left:50%;
+transform:translateX(-50%);
+width:18px;
+height:18px;
+background:#ffd54f;
+border-radius:50%;
+box-shadow:0 0 10px #ffd54f;
+}
+
+/* =========================
+PETALS (INI YANG BUKAN BOLA 🗿)
+========================= */
+
+.petal{
+position:absolute;
+top:10px;
+left:50%;
+width:18px;
+height:38px;
+background:linear-gradient(#ffffff,#ffe6f0);
+border-radius:50% 50% 50% 50%;
+transform-origin:bottom center;
+}
+
+/* susunan kelopak melingkar */
+.p1{transform:translateX(-50%) rotate(0deg);}
+.p2{transform:translateX(-50%) rotate(30deg);}
+.p3{transform:translateX(-50%) rotate(60deg);}
+.p4{transform:translateX(-50%) rotate(90deg);}
+.p5{transform:translateX(-50%) rotate(120deg);}
+.p6{transform:translateX(-50%) rotate(150deg);}
+.p7{transform:translateX(-50%) rotate(180deg);}
+.p8{transform:translateX(-50%) rotate(210deg);}
+.p9{transform:translateX(-50%) rotate(240deg);}
+.p10{transform:translateX(-50%) rotate(270deg);}
+.p11{transform:translateX(-50%) rotate(300deg);}
+.p12{transform:translateX(-50%) rotate(330deg);}
+
+/* =========================
+SWAY ANIMATION (GERAK ANGIN)
+========================= */
+
+@keyframes sway{
+0%{transform:rotate(-2deg);}
+50%{transform:rotate(2deg);}
+100%{transform:rotate(-2deg);}
+}
+
+/* =========================
+FLOWER VARIATIONS (BIAR NGGAK KOPI-PASTE DOANG 🗿)
+========================= */
+
+.f1{transform:scale(0.8);}
+.f2{transform:scale(1.1);}
+.f3{transform:scale(0.9);}
+.f4{transform:scale(1.2);}
+.f5{transform:scale(1);}
+.f6{transform:scale(0.7);}
